@@ -70,6 +70,24 @@ public class MatrixMathematics {
 		return mat;
 	}
 	
+	/**
+	 * The cofactor of a matrix
+	 * @param matrix
+	 * @return
+	 * @throws NoSquareException
+	 */
+	public static Matrix cofactor(Matrix matrix) throws NoSquareException {
+		Matrix mat = new Matrix(matrix.getNrows(), matrix.getNcols());
+		for (int i=0;i<matrix.getNrows();i++) {
+			for (int j=0; j<matrix.getNcols();j++) {
+				mat.setValueAt(i, j, changeSign(i) * changeSign(j) * determinant(createSubMatrix(matrix, i, j)));
+			}
+		}
+		
+		return mat;
+	}
+
+	
 
 	/**
 	 * Transpose of a matrix - Swap the columns with rows
@@ -87,4 +105,23 @@ public class MatrixMathematics {
 	}
 
 
+
+	/**
+	 * Inverse of a matrix - A-1 * A = I where I is the identity matrix
+	 * A matrix that have inverse is called non-singular or invertible. If the matrix does not have inverse it is called singular.
+	 * For a singular matrix the values of the inverted matrix are either NAN or Infinity
+	 * Only square matrices have inverse and the following method will throw exception if the matrix is not square.
+	 * @param matrix
+	 * @return
+	 * @throws NoSquareException
+	 */
+	public static Matrix inverse(Matrix matrix) throws NoSquareException {
+		double det = determinant(matrix);
+		if(det==0) {
+			return null;
+		}
+
+		return (transpose(cofactor(matrix)).multiplyByConstant(1.0/det));
+		
+		}	
 }
