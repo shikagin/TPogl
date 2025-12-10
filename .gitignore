@@ -1,0 +1,45 @@
+
+# Gradle build
+/build/
+/.gradle/
+gradle-app.setting
+
+# Wrapper files (keep gradlew but ignore generated stuff)
+!gradlew
+!gradlew.bat
+!/gradle/wrapper/
+gradle/
+
+# IntelliJ / IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Logs and reports
+reports/
+*.log
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Temporary
+tmp/
+*.tmp
+
+# Java / compiled stuff
+*.class
+*.jar
+*.war
+*.ear
+
+# Backup
+*~
