@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Matrix" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-12-10T13:57:17.587Z" hostname="rafika-mint" time="0.244">
+<testsuite name="Matrix" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-12-10T14:22:37.833Z" hostname="rafika-mint" time="0.185">
   <properties/>
-  <testcase name="Determinant" classname="Matrix" time="0.24"/>
-  <testcase name="Transpose" classname="Matrix" time="0.004"/>
+  <testcase name="Determinant" classname="Matrix" time="0.185"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
