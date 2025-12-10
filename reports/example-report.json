@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2025-12-10T13:43:18.656Z",
+        "start_timestamp": "2025-12-10T13:53:08.071Z",
         "line": 5,
         "name": "Determinant",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5118000,
+              "duration": 5421000,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 9641000,
+              "duration": 2707000,
               "status": "passed"
             },
             "line": 7,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 3418000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 12,
